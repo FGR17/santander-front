@@ -7,22 +7,30 @@
     <meta name="viewport" content="width=device-width,
 initial-scale=1.0">
     <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <section class="fixed-header" >
-        <header class = "header"> 
+    <!-- <section class="fixed-header" >
+        <header class = "header">   
             <a href="./index.html">
             <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="">
         </a>
         <nav class = "navbar">
             <ul>
-                <li>Práctica 1</li>
-                <li>Práctica 2</li>
-                <li>Práctica 3</li>
-                <li>Practica 4</li>
-                <li>Práctica 5</li>
+                <li><b> Práctica 1</b></li>
+                <li><b> Práctica 2</b></li>
+                <li><b> Práctica 3</b></li>
+                <li><b> Practica 4</b></li>
+                <li><b> Práctica 5</b></li>
                </ul>
         </nav>
     
@@ -32,11 +40,84 @@ initial-scale=1.0">
         </div>
     
         </header>
-    </section>
-    
+    </section> -->
 
-    <h1> Mi primer etiqueta </h1>
-    <h2> Mi etiqueta </h2>
+    
+    <!-- Nuestra barra de navegación comentada va aquí -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">
+      <img
+        src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
+        alt="Matcha"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Platform</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pricing.html">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Customers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <a>Sign In</a>
+        <button>Start free trial</button>
+      </form>
+    </div>
+  </nav>
+<!--  agrega carusel de bootstrap -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/855/public/media/image/2019/03/McLaren%20720S%20Spider%20by%20MSO%20%285%29.jpg?itok=wvlYrOtw" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://hips.hearstapps.com/es.h-cdn.co/cades/contenidos/58750/mclaren-720s_spider_by_mso-2019-1600-01.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/855/public/media/image/2019/03/McLaren%20720S%20Spider%20by%20MSO%20%284%29.jpg?itok=ckFy_jwj" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sx-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sx-only">Next</span>
+    </a>
+  </div>
+    
+<section class="etiquetas">
+    <h1>Mi primer etiqueta </h1>
+    <h2>Mi etiqueta </h2>
     <h3>Mi etiqueta</h3>
     <h4>Mi etiqueta</h4>
     <h5>Mi etiqueta</h5>
@@ -44,8 +125,12 @@ initial-scale=1.0">
     <p>
         <b>Mi etiqueta</b> parrafo
     </p>
+
+</section>
+
+
     <!-- <input type="text"><br> -->
-    <form>
+    <form class="publish1">
         <label for="name">Nombre</label><br>
         <input type="text" id="name" name="fname" placeholder="Nombre" required><br><br>
         <input type="text" id="lastname" name="lastname" placeholder="Apellido"><br><br>
@@ -54,12 +139,16 @@ initial-scale=1.0">
         <input type="password" id="password" name="password" placeholder="Contraseña"><br><br>
         <button type="submit">Enviar</button>
     </form">
-    <img alt="Logo de matcha" src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" />
+    <!-- <img class= "logo" alt="Logo de matcha" src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" /> -->
+    <figure class="banner">
+      <img alt="Logo de matcha" src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" />
+    </figure>
 
-<section>
+<section class="todo">
     <section class="video">
         <video height="300" width="500" src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4
 " controls poster="https://www.adslzone.net/app/uploads-adslzone.net/2020/10/Los-Simpson.jpg"></video>
+<img class="MiraComoFunciona" src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png" alt="mira como funciona">
 </video>
 
 
@@ -86,7 +175,173 @@ initial-scale=1.0">
 </article>
 </section>
 
-<img class="MiraComoFunciona" src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png" alt="mira como funciona">
+<!--  -->
+
+<!-- agregar el contenido que quiera de bootstrap  -->
+<section class="cartas">
+  <div class="card" style="width: 18rem;">
+    <img src="https://oasishoteles.com/blog/wp-content/uploads/2021/04/huasteca.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">San Luis Postosi</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="https://www.tripadvisor.es/Attraction_Review-g499409-d3228730-Reviews-Huasteca_Potosina-Ciudad_Valles_Central_Mexico_and_Gulf_Coast.html" class="btn btn-primary">Qué ver</a>
+    </div>
+  </div>
+  
+  <div class="card" style="width: 18rem;">
+    <img src="https://www.soynomada.news/__export/1610503864693/sites/debate/img/2021/01/12/7_cosas_que_no_debes_hacer_en_tu_viaje_a_chiapas_crop1610503718216.jpeg_346753400.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Chiapas</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="https://www.tripadvisor.es/Search?q=chiapas&searchSessionId=40C568459131AC78CEEEA36447A67E001625105022861ssid&searchNearby=false&geo=499409&sid=4E885B8D379C43D4BCE4DF6521227D301625105269450&blockRedirect=true" class="btn btn-primary">Qué ver</a>
+    </div>
+  </div>
+  
+  <div class="card" style="width: 18rem;">
+    <img src="https://www.gob.mx/cms/uploads/article/main_image/80669/nuevo-leon-monterrey-mexico.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Nuevo Leon</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="https://www.tripadvisor.es/Search?q=chiapas&searchSessionId=40C568459131AC78CEEEA36447A67E001625105022861ssid&searchNearby=false&geo=499409&sid=4E885B8D379C43D4BCE4DF6521227D301625105269450&blockRedirect=true" class="btn btn-primary">Qué ver</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://elsouvenir.com/wp-content/uploads/2017/02/Portada.-Tesoros-de-Jalisco-para-el-mundo.-Foto.-Tendencias.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Jalisco</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="https://www.tripadvisor.es/Search?q=chiapas&searchSessionId=40C568459131AC78CEEEA36447A67E001625105022861ssid&searchNearby=false&geo=499409&sid=4E885B8D379C43D4BCE4DF6521227D301625105269450&blockRedirect=true" class="btn btn-primary">Qué ver</a>
+    </div>
+  </div>
+  
+</section>
+
+<section class="features">
+    <article class= "feature-art">caracteristica 1</article>
+    <article class= "feature-art">caracteristica 2</article>
+    <article class= "feature-art">caracteristica 3</article>
+    <article class= "feature-art">caracteristica 4</article>
+</section>
+---
+<section class="features">
+    <article class="feature-card">
+      <div class="feature-content">
+        <figure>
+          <img
+            src="https://static.wikia.nocookie.net/los-simpsom/images/4/4a/Homero-simpson-2.jpg/revision/latest/scale-to-width-down/275?cb=20130413015655&path-prefix=es"
+            alt="Publish icon"
+          />
+        </figure>
+        <h3>Fill your blog with engaging articles.</h3>
+        <p>
+          Publish to your blog in less time than it takes to drink your
+          morning coffee.
+        </p>
+        <a href="">Publish instantly →</a>
+      </div>
+      <div class="feature-image">
+        <figure>
+          <img
+            src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_publish.png"
+            alt="Publish example"
+          />
+        </figure>
+      </div>
+    </article>
+    <article class="feature-card">
+      <div class="feature-content">
+        <figure>
+          <img
+            src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_site_traffic.png"
+            alt="Site traffic icon"
+          />
+        </figure>
+        <h3>Attract and engage more website visitors.</h3>
+        <p>
+          Enhance your email, social media channels, and paid ads with content
+          from Matcha.
+        </p>
+        <a href="">Get more site traffic →</a>
+      </div>
+      <div class="feature-image">
+        <figure>
+          <img
+            src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_site_traffic.png"
+            alt="Site traffic example"
+          />
+        </figure>
+      </div>
+    </article>
+    <article class="feature-card">
+      <div class="feature-content">
+        <figure>
+          <img
+            src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_capture.png"
+            alt="Capture icon"
+          />
+        </figure>
+        <h3>Capture more emails with locked content.</h3>
+        <p>
+          Convert 10x more of your traffic into subscribers and nurture them
+          to a sale.
+        </p>
+        <a href="">Grow your email list faster →</a>
+      </div>
+      <div class="feature-image">
+        <figure>
+          <img
+            src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_capture.png"
+            alt="Capture example"
+          />
+        </figure>
+      </div>
+    </article>
+    <article class="feature-card">
+      <div class="feature-content">
+        <figure>
+          <img
+            src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_roi.png"
+            alt="ROI icon"
+          />
+        </figure>
+        <h3>Optimize your blog’s performance.</h3>
+        <p>
+          See what content delivers the most traffic, engagement, email
+          subscribers, and sales.
+        </p>
+        <a href="">See content’s ROI →</a>
+      </div>
+      <div class="feature-image">
+        <figure>
+          <img
+            src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_roi.png"
+            alt="ROI example"
+          />
+        </figure>
+      </div>
+    </article>
+  </section>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  crossorigin="anonymous"
+></script>
+
+
+
 </body>
 
 </html>
+
